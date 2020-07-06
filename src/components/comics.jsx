@@ -31,11 +31,11 @@ class Comics extends Component {
 
   handleDelete = async (comic) => {
     const originalComics = this.state.comics;
-    const comics = originalcomics.filter((m) => m._id !== comic._id);
+    const comics = originalComics.filter((m) => m._id !== comic._id);
     this.setState({ comics });
 
     try {
-      await deletecomic(comic._id);
+      await deleteComic(comic._id);
     } catch (ex) {
       if (ex.response && ex.response.status === 404)
         toast.error("This comic has already been deleted.");
