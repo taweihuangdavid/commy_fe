@@ -23,7 +23,6 @@ class Comics extends Component {
 
   async componentDidMount() {
     const { data } = await getGenres();
-    console.log(data);
     const genres = [{ _id: "", name: "All Genres" }, ...data];
 
     const { data: comics } = await getComics();
