@@ -1,6 +1,6 @@
 ## Commy
 
-This is a simple Web Frontend UI for Comic Rental Service.
+This is a simple Web Frontend UI for Comic Books Rental Service.
 
 ## Technology Stack
 
